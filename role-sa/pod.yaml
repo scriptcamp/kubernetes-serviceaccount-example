@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+  namespace: webapps
+spec:
+  containers:
+  - image: bibinwilson/docker-kubectl:latest
+    name: kubectl
+  serviceAccountName: app-service-account
